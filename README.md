@@ -1,3 +1,4 @@
+
 # Uncertainty-Aware Decision Making for Safe Navigation
 
 ![ROS 2](https://img.shields.io/badge/ROS_2-Jazzy-22314E?style=for-the-badge&logo=ros)
@@ -20,6 +21,8 @@ As environmental clutter and measurement uncertainty increase, the robot autonom
 
 * **Adaptive Velocity Scaling:** Dynamically reduces linear speed by 25% to 50% based on the real-time uncertainty classification.
 <img width="1215" height="743" alt="WhatsApp Image 2026-10-07 at 11 17 08 PM" src="https://github.com/user-attachments/assets/b50c6a5a-b715-423b-b820-61a4b32fefd5" />
+
+<img width="1142" height="614" alt="leftrighdecision" src="https://github.com/user-attachments/assets/3004576f-d02b-44ef-8fbf-9f469e45a405" />
 
   
 * **Hysteresis Obstacle Avoidance:** Utilizes dual-threshold logic (Trigger: 0.60m, Clear: 0.85m) to prevent oscillatory "stuck" states when navigating tight corridors.
@@ -77,6 +80,7 @@ To visualize the flight data, run the included plotting script:
 ```bash
 python3 plot_results.py
 ```
+<img width="1000" height="685" alt="graph" src="https://github.com/user-attachments/assets/add5a5be-9b5c-405b-8841-667fe6c991e5" />
 
 ## Author
 **Barsharani Behera**  
