@@ -42,28 +42,29 @@ This project runs across multiple terminals to separate simulation, perception, 
 
 1. Launch the Simulation Environment
 
-
+Bash
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-
 2. Start the Perception Node (Uncertainty Estimator)
 
-
+Bash
 ros2 run uncertainty_navigation uncertainty_estimator
-
 3. Start the Control Node (Goal Navigator)
 Note: You can dynamically pass the target (x, y) coordinates using ROS 2 parameters.
 
+Bash
 ros2 run uncertainty_navigation goal_navigator --ros-args -p goal_x:=-1.2 -p goal_y:=1.2
-
 Experimental Results
 The system successfully proves that speed can be actively correlated with sensory uncertainty. Upon reaching the target coordinate, the goal_navigator node automatically halts and saves the telemetry to navigation_results.csv.
 
 To visualize the flight data, run the included plotting script:
 
+Bash
 python3 plot_results.py
+(You can upload the navigation_graph.png file to your repository and display it here to show the 4-part graph proving the speed drop during high-uncertainty events).
 
-navigation_graph.png 
+Author
+Barsharani Behera
 
 Author
 Barsharani Behera
