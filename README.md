@@ -31,4 +31,4 @@ cd ~/uncertainty_navigation_ws
 colcon build --packages-select uncertainty_navigation
 
 # Source the workspace
-source install/setup.bash
+source install/setup.bash   
